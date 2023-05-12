@@ -1,0 +1,330 @@
+:root
+{
+    --box-shadow:0 0.5rem 1.5rem rgb(221, 201, 174);
+    --main-color :#77471b;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--main-color);
+    padding-left: 5px;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+  }
+  .h-con{
+    
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+   /* position: fixed;*/
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: whitesmoke;
+    height: 55px;
+}
+.navbar a:hover
+{
+   background-color: var(--main-color);
+   color: white;
+   border-radius: 10px;
+   padding: 10px;
+
+}
+.logo
+{
+    height: 50px;
+}
+.logo img{
+    top:10;
+    height: 60px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#shopping-cart
+{
+    padding-right: 30px;
+    color: #77471b;
+   
+}
+.contact
+{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* main-content*/
+.main-content .container
+{
+    
+    display: flex;
+    justify-content: space-between;
+   
+    height: 80vh;
+  background-color: whitesmoke;
+}
+.main-content .container .right 
+{
+    /* flex: 1;*/
+    width: 40%;
+    padding: 50px;
+}
+.main-content .container img
+{
+   /*  flex: 1;*/
+  
+}
+form{
+    width: 100%;
+}
+/*
+.main-content .container .left
+{
+    flex: 1;
+  
+}
+*/
+/*form*/
+.left
+{
+    background-color: whitesmoke;
+    color: beige;
+    width: 60%;
+
+    /*
+    background-image: url(../images/abstract-smooth-brown-wall-background-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color.jpg);*/
+}
+.left h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+}
+.left .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: white;
+    color: black;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    
+}
+.form-control
+{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control i{
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+    right: 10px;
+}
+.form-control small{
+    position: absolute;
+    visibility: hidden;
+    margin-top: 15px;
+    bottom: 0;
+    left: 0;
+}
+.form-control label
+{
+    margin-bottom: 5px;
+}
+.form-control input
+{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-control.success input
+{
+    border-color: #2ecc71;
+}
+.form-control.error input
+{
+    border-color:red;
+}
+.form-control.success i.fa-check-circle
+{
+     visibility: visible;
+     color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle
+{
+     visibility: visible;
+     color: red;
+}
+.form-control.error small
+{
+    visibility: visible;
+    color: red;
+}
+button
+{
+    text-align: center;
+    padding: 10px 30px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    display: block;
+}
+/*video*/
+
+
+ 
+
+#coffee {
+    margin-top: 10px;
+    padding: 10px;
+    height: 200px;
+   /* background-color: #2ecc71;*/
+}
+/*ffooter*/
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+footer li
+{
+    list-style: none;
+    padding: 2px;
+    list-style-type: none;
+}
+#footer
+{
+   /* background-image:url(../images/abstract-smooth-brown-wall-background-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color.jpg);*/
+   background-color: #4d3130
+   ;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.coff-btn
+{
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: beige;
+    color: var(--main-color);
+    font-weight: bolder;
+
+}
+@media (max-width: 991px)  { 
+    .main-content .container
+{
+    display: flex;
+    justify-content: space-between;
+   
+   /* height: 80vh;*/
+  background-color: whitesmoke;
+}
+.main-content .container .right
+{
+    /* flex: 1;*/
+     background-color: blue;
+    
+}
+.main-content .container .right
+{
+    display: none;
+   /*  flex: 1;*/
+     background-image: url(../images/one.jpg);
+    background-size: cover;
+    width: 60%;
+    padding: 50px;
+}
+    .main-content .container
+{
+    display: flex;
+   
+  flex-direction: column;
+}
+    footer
+
+    {
+        background-color: rgb(35,35,35);
+        color: white;
+    }
+    footer .container
+    {
+      display: flex;
+      /*justify-content: space-between;*/
+      flex-direction: column;
+      align-items: center;
+      padding-left: 15px;
+      padding-top: 20px;
+      gap:10px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer .container li 
+    {
+      list-style: none;
+      text-align: center;
+     
+    }
+    footer .container a 
+    {
+      display: block; 
+      text-align: center;
+    }
+    footer .container button
+    {
+      border: 1px solid rgb(0, 0, 0);
+      background-color: #fff;
+      color: grey;
+      padding: 15px 40px;
+      margin: 5px;
+      
+      border-radius: 25px;
+    }
+    footer input
+    {
+      background: transparent;
+      color:#fff;
+      border-bottom: 1px solid grey;
+      outline: none;
+    }
+
+
+
+}

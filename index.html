@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <title>e-commerce</title>
+</head>
+<body>
+    <!--Header section-->
+    <section>
+        
+            <div class="h-con">
+                <a href="#" class="logo"><img src="./images/output-onlinepngtools (3).png" alt="logo" width="100px"></a>
+                <nav class="navbar">
+                    <a href="#" class="home">Home</a>
+                    <a href="about.html" class="about">About</a>
+                    <a href="contact.html" class="contact">Contact us</a>
+                </nav>
+            
+                    
+                  <h2>
+                    <i class="fa-solid fa-cart-shopping" id="shopping-cart" ></i>
+                  </h2>  
+                  <!--
+                      <span class="quantity"></span>
+                  -->  
+                   
+                </div>
+
+        </div>
+      
+    </section>
+    <!--slider-->
+<div class="container">
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <h1>Today's good mood <br> is sponsored by<br> coffee</h1>
+                <p>"Our culture runs on coffee and gasoline,the first  often <br>tasting like the second."Sience may 
+                never<br> come up with a better office.</p>
+                <button class="btn-order">Order Now</button>
+                <button class="btn-more">Read More</button>
+            </div>
+            <img src="./images/slider1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h1>Today's good mood <br> is sponsored by<br> coffee</h1>
+                <p>"Our culture runs on coffee and gasoline,the first  often <br>tasting like the second."Sience may 
+                never<br> come up with a better office.</p>
+                <button class="btn-order">Order Now</button>
+                <button class="btn-more">Read More</button>
+            </div>
+            <img src="./images/slider2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h1>Today's good mood <br> is sponsored by<br> coffee</h1>
+                <p>"Our culture runs on coffee and gasoline,the first  often <br>tasting like the second."Sience may 
+                never<br> come up with a better office.</p>
+                <button class="btn-order">Order Now</button>
+            <button class="btn-more">Read More</button>
+            </div>
+            
+            <img src="./images/cup-near-coffee-beans.jpg" alt="">
+        </div>
+    </div>
+        <div id="next" onclick="next()"> > </div>
+        <div id="prev" onclick="prev()"> < </div>
+</div>
+<section class="about-s" id = "about-s">
+    <div class="image">
+          <img src="images/coffeesc.svg" alt="">
+    </div>
+    <div class="content-s">
+        <h3>A cup of coffee to complete your Day</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eum,
+             recusandae beatae aut eligendi nostrum illo a debitis consectetur nobis!</p>
+             <a href="#menu" class="btn-s">Our menu</a>
+    </div>
+
+</section>
+<section class="homee">
+    <div class="container">
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search product name here...">
+                <button id="search">Search</button>
+            </div>
+            <div id="buttons">
+                <button class="button-value" onclick="filterProduct('all')">All</button>
+                <button class="button-value"onclick="filterProduct('Tea')">Tea</button>
+                <button class="button-value"onclick="filterProduct('CoffeeDrinks')">CoffeeDrinks</button>
+                <button class="button-value" onclick="filterProduct('coffee')">Coffee </button>
+                <button class="button-value"onclick="filterProduct('CoffeeMachine')">CoffeeMachine</button>
+
+            </div>
+            <div id="products"></div>
+         </div>
+    
+
+    </div>
+   
+</section>
+<!--About-->
+
+<!--facality -->
+<section class="facality">
+    <div class ="heading">
+        <img src="images/—Pngtree—blade shining coffee beans line_6182415.png" alt="">
+        <h3>our facality</h3>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <img src="./images/pngegg (3).png" alt="">
+            <h3>varities of coffee</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, perspiciatis!</p>
+        </div>
+        <div class="box">
+            <img src="./images/crs.png" alt="">
+            <h3>varities of breadfast</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, perspiciatis!</p>
+        </div>
+        <div class="box">
+            <img src="./images/donuts.png" alt="">
+            <h3>varities of Donuts</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, perspiciatis!</p>
+        </div>
+        <div class="box">
+            <img src="./images/to go.png" alt="">
+            <h3>Ready to go coffee</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, perspiciatis!</p>
+        </div>
+    </div>
+
+</section>
+<!--coffee quality-->
+<section class="material" id ="mat">
+    <div class="coffee-text">
+        <h3>Coffee & Dessert With Excellant Quality</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est vero quaerat iusto quam voluptatibus.</P>
+    </div>
+    <div id="coffee-img1"></div>
+    <div id="coffee-img2"></div>
+    <div id="coffee-imgSmall">
+        <div id="coffee-3"></div>
+        <div id="coffee-4"></div>
+    </div>
+
+</section>
+     <!--footer-->
+     <footer id="footer">
+        <div class="container">
+            <div>
+                <li>Return policy</li>
+                <li>Search out store</li>
+                <li>Blog</li>
+                <li>Contact us</li>
+            </div>
+            <div>
+               <li><i class="fab fa-facebook"></i> facebook</li>
+               <li><i class="fab fa-twitter"></i> twitter</li>
+               <li><i class="fab fa-instagram"></i> instgram</li>
+               <li><i class="fab fa-youtube"></i> Youtube</li>
+            </div>
+            <div>
+                <div>
+                    <a href=""><img src="./images/master.jpg" alt=""></a>
+                    <a href=""><img src="./images/Ae.jpg" alt=""></a>
+                    <a href=""><img src="./images/visa.jpg" alt=""></a>
+                    <a href=""><img src="./images/paypal.jpg" alt=""></a>
+                </div>
+
+                <div>
+                    <button class="coff-btn">Buy a coffee now !</button>
+                    <button  class="coff-btn" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+                </div>
+
+            
+               
+            </div>
+
+        </div>
+     </footer>
+    
+   
+    
+<script src="./js/script.js"></script>
+
+</body>
+</html>
